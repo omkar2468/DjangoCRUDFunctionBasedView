@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Function Based</title>
+
+    <link rel="stylesheet" href="{% static 'myapp/css/bootstrap.css' %}" />
+  </head>
+  <body style="background-color: #ccd1d1">
+    <div class="container-fluid mt-5">
+      <div class="text-center alert alert-info">
+        <h1>CRUD - Function Based View ModelForm</h1>
+      </div>
+
+      {% block content %} {% endblock %}
+    </div>
+
+    <!-- JavaScript -->
+    <script src="{% static 'myapp/js/jquery.js' %}"></script>
+    <script src="{% static 'myapp/js/popper.js' %}"></script>
+    <script src="{% static 'myapp/js/bootstrap.js' %}"></script>
+  </body>
+</html>
